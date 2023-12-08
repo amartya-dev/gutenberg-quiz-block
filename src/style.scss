@@ -1,0 +1,65 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-blockdemo {
+	padding: 2%;
+
+	.quiz-container {
+		border: 2px solid red;
+		padding: 3%;
+		border-radius: 10px;
+		background-color: lightgray;
+	}
+
+	.correct {
+		background-color: green;
+		padding: 10%;
+		border-radius: 10px;
+		color: white;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.wrong {
+		background-color: red;
+		color: white;
+		padding: 10%;
+		border-radius: 10px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.answer {
+		cursor: pointer;
+		background-color: white;
+		padding: 2%;
+		width: 80%;
+		border-radius: 20px;
+		transition: transform .2s;
+		margin-top: 3%;
+	}
+
+	.answer:hover {
+		transform: scale(1.01);
+	}
+
+	#question {
+		font-size: x-large;
+	}
+
+	.stack {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+
+		.stack-button {
+			padding-top: 6%;
+		}
+	}
+}

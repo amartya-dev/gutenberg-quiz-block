@@ -1,0 +1,61 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-blockdemo {
+  padding: 2%;
+}
+.wp-block-create-block-blockdemo .quiz-container {
+  border: 2px solid red;
+  padding: 3%;
+  border-radius: 10px;
+  background-color: lightgray;
+}
+.wp-block-create-block-blockdemo .correct {
+  background-color: green;
+  padding: 10%;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.wp-block-create-block-blockdemo .wrong {
+  background-color: red;
+  color: white;
+  padding: 10%;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.wp-block-create-block-blockdemo .answer {
+  cursor: pointer;
+  background-color: white;
+  padding: 2%;
+  width: 80%;
+  border-radius: 20px;
+  transition: transform 0.2s;
+  margin-top: 3%;
+}
+.wp-block-create-block-blockdemo .answer:hover {
+  transform: scale(1.01);
+}
+.wp-block-create-block-blockdemo #question {
+  font-size: x-large;
+}
+.wp-block-create-block-blockdemo .stack {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.wp-block-create-block-blockdemo .stack .stack-button {
+  padding-top: 6%;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
