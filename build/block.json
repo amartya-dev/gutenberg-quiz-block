@@ -1,51 +1,51 @@
 {
-  "$schema": "https://schemas.wp.org/trunk/block.json",
-  "apiVersion": 3,
-  "name": "create-block/blockdemo",
-  "version": "0.1.0",
-  "title": "Quiz Section",
-  "category": "design",
-  "icon": "smiley",
-  "description": "A quick quiz section to track user's interest in your blog",
-  "attributes": {
-    "question": {
-      "type": "string",
-      "source": "text",
-      "selector": "#question",
-      "default": ""
-    },
-    "numOptions": {
-      "type": "integer",
-      "default": 1
-    },
-    "correct": {
-      "type": "string",
-      "default": ""
-    },
-    "options": {
-      "type": "array",
-      "source": "query",
-      "selector": ".answer",
-      "query": {
-        "answer": {
-          "source": "text",
-          "selector": "div"
-        }
-      },
-      "default": [
-        {
-          "answer": ""
-        }
-      ]
-    }
-  },
-  "example": {},
-  "supports": {
-    "html": false
-  },
-  "textdomain": "blockdemo",
-  "editorScript": "file:./index.js",
-  "editorStyle": "file:./index.css",
-  "style": "file:./style-index.css",
-  "viewScript": "file:./view.js"
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/blockdemo",
+	"version": "0.1.0",
+	"title": "Quiz Section",
+	"category": "design",
+	"icon": "smiley",
+	"description": "A quick quiz section to track user's interest in your blog",
+	"attributes": {
+		"question": {
+			"type": "string",
+			"source": "text",
+			"selector": "#question",
+			"default": ""
+		},
+		"numOptions": {
+			"type": "integer",
+			"default": 1
+		},
+		"correct": {
+			"type": "string",
+			"default": ""
+		},
+		"options": {
+			"type": "array",
+			"source": "query",
+			"selector": ".answer",
+			"query": {
+				"answer": {
+					"source": "text",
+					"selector": "div"
+				}
+			},
+			"default": [
+				{
+					"answer": ""
+				}
+			]
+		}
+	},
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blockdemo",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
 }
