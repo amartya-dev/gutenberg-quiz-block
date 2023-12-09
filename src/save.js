@@ -23,10 +23,14 @@ export default function save( { attributes } ) {
 			<div className="quiz-container" id="quiz-container">
 				<div id="question">{ attributes.question }</div>
 				<div id="answer" style={ { display: 'none' } }>
-					{ attributes.answer }
+					{ attributes.correct }
 				</div>
 				{ attributes.options.map( ( option ) => {
-					return <div className="answer">{ option.answer }</div>;
+					return (
+						<div className="answer">
+							<div>{ option.answer }</div>
+						</div>
+					);
 				} ) }
 			</div>
 			<div id="correct" style={ { display: 'none' } } className="correct">

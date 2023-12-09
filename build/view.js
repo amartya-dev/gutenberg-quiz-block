@@ -32,7 +32,7 @@ answers.forEach(answer => answer.addEventListener('click', function handleAnswer
   const correctDiv = document.getElementById('correct');
   const wrongDiv = document.getElementById('wrong');
   const correct = document.getElementById('answer');
-  if (correct.innerHTML === answer.innerHTML) {
+  if (correct.innerText === answer.innerText) {
     container.style.display = 'none';
     correctDiv.style.display = 'block';
   } else {

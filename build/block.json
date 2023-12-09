@@ -3,10 +3,10 @@
   "apiVersion": 3,
   "name": "create-block/blockdemo",
   "version": "0.1.0",
-  "title": "Progress Indicator",
+  "title": "Quiz Section",
   "category": "design",
-  "icon": "chart-pie",
-  "description": "Progress indicator for your blog.",
+  "icon": "smiley",
+  "description": "A quick quiz section to track user's interest in your blog",
   "attributes": {
     "question": {
       "type": "string",

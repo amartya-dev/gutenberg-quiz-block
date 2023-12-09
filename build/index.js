@@ -108,7 +108,7 @@ function Edit({
     }, "Add new"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
       onClick: () => {
         setAttributes({
-          answer: attributes.options[optionNumber].answer
+          correct: attributes.options[optionNumber].answer
         });
       },
       className: "stack-button"
@@ -230,10 +230,10 @@ function save({
     style: {
       display: 'none'
     }
-  }, attributes.answer), attributes.options.map(option => {
+  }, attributes.correct), attributes.options.map(option => {
     return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "answer"
-    }, option.answer);
+    }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, option.answer));
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     id: "correct",
     style: {
@@ -331,7 +331,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/blockdemo","version":"0.1.0","title":"Progress Indicator","category":"design","icon":"chart-pie","description":"Progress indicator for your blog.","attributes":{"question":{"type":"string","source":"text","selector":"#question","default":""},"numOptions":{"type":"integer","default":1},"correct":{"type":"string","default":""},"options":{"type":"array","source":"query","selector":".answer","query":{"answer":{"source":"text","selector":"div"}},"default":[{"answer":""}]}},"example":{},"supports":{"html":false},"textdomain":"blockdemo","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/blockdemo","version":"0.1.0","title":"Quiz Section","category":"design","icon":"smiley","description":"A quick quiz section to track user\'s interest in your blog","attributes":{"question":{"type":"string","source":"text","selector":"#question","default":""},"numOptions":{"type":"integer","default":1},"correct":{"type":"string","default":""},"options":{"type":"array","source":"query","selector":".answer","query":{"answer":{"source":"text","selector":"div"}},"default":[{"answer":""}]}},"example":{},"supports":{"html":false},"textdomain":"blockdemo","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ })
 

@@ -88,9 +88,9 @@ export default function Edit( { attributes, setAttributes } ) {
 							<Button
 								onClick={ () => {
 									setAttributes( {
-										answer: attributes.options[
-											optionNumber
-										].answer,
+										correct:
+											attributes.options[ optionNumber ]
+												.answer,
 									} );
 								} }
 								className="stack-button"
